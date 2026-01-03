@@ -13,3 +13,4 @@ Repozytorium szkoleniowe do nauki GitHub Actions.
 
 - Punkt pierwszy (brak spacji po myślniku to błąd w Markdown!)
 - Punkt drugi
+- 
