@@ -1,4 +1,7 @@
 # Projekt Testowy CI/CD
+
+[![Documentation Checker](https://github.com/wlodekbielski-dotcom/zaj6/actions/workflows/link-checker.yml/badge.svg)](https://github.com/wlodekbielski-dotcom/zaj6/actions/workflows/link-checker.yml)
+
 Repozytorium szkoleniowe do nauki GitHub Actions.
 
 ## Zasoby
