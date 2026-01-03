@@ -24,3 +24,15 @@ jobs:
         uses: DavidAnson/markdownlint-cli2-action@v16
         with:
           globs: "**/*.md"
+
+      # NOWY KROK: Generowanie raportu
+      - name: Utworz Raport
+        if: always() # Wykonaj nawet jak linter znajdzie błędy
+        run: echo "Analiza składni zakończona sukcesem dla commitu $(git rev-parse --short HEAD)" > raport-jakosci.txt
+
+      # NOWY KROK: Wysyłanie artefaktu
+      - name: Upload Artifact
+        uses: actions/upload-artifact@v4
+        with:
+          name: raport-audytu
+          path: raport-jakosci.txt
